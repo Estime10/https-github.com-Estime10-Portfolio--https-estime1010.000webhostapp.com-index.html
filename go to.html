@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="go to.css">
+    <link rel="stylesheet" href="skillsjs.js">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=labelleAurore">
+    <title>Interlude</title>
+</head>
+<body>
+    
+    <a href="mySkills.html" target="_blank">mySkills</a>
+
+    <div class="more">
+    <label id="LblClignotant"><q>Clic on mySkills for more</q></label>
+    </div>
+        <script type="text/javascript">
+            var signe = -2;
+            var clignotementFading = function(){
+            var obj = document.getElementById('LblClignotant');
+            if (obj.style.opacity >= 0.96){
+            signe = -2;
+            }
+            if (obj.style.opacity <= 0.04){
+            signe = 2;
+            }
+            obj.style.opacity = (obj.style.opacity * 1) + (signe * 0.04);
+            };
+            
+            // mise en place de l appel de la fonction toutes les 0.100 secondes
+            // Pour arrêter le clignotement : clearInterval(periode);
+            periode = setInterval(clignotementFading, 85 );
+        </script>
+
+                           
+    </div>
+
+      
+      
+      
+      
+      
+
+</body>
+</html>

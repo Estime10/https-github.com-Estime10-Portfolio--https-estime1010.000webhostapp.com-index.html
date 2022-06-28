@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: "Poppins",snas-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+.nav{
+      position: fixed;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 1rem 6.5rem;
+      background-color:black;
+      z-index: 1000000;
+}
+.nav h2{
+      color: #fff;
+      font-size: 1.7rem;
+}
+      #item{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+}
+      #item li{
+              list-style: none;
+              padding-right: 50px;
+}
+      #item li a{
+                text-decoration: none;
+                font-size: 1rem;
+                text-transform: uppercase;
+                color: #fff;
+}
+      #item li a:hover, #item .icon i:hover{
+              color: darkgoldenrod;
+              cursor: pointer;
+}
+      #item .icon i{
+                color: #fff;
+                padding-right: 30px;
+                font-weight: bolder;
+}
+.btn{
+  padding: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-around;
+  
+}
+.back{
+      background-image: url(or.png);
+      width: 100%;
+      height: 100vh;
+      background-size: cover;
+      z-index: index -1;
+}
+.back .overlay{
+      background: #171819;
+      width: 100%;
+      height: 100%;
+      opacity:0.85;
+}
+.mid{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+}
+.mid q{
+      color: #7f8c8d;
+      font-size: 1.3rem;
+      margin-bottom: 1.4rem;
+}
+.mid h2{
+      color: #fff;
+      font-size: 3rem;
+}
+.mid .btn{
+      margin-top: 2rem;
+}
+.mid .btn a{
+            text-decoration: none;
+            text-decoration:uppercase;
+            justify-content: space-between;
+}
+.mid .btn a.in{
+            color: #fff;
+            font-weight: 500;
+            padding: 1.9rem, 1.6rem;
+            justify-content: space-between;
+}
+.mid .btn a.in:hover{
+            color: darkgoldenrod;
+}
+.mid .btn a.out:hover{
+          background: black;
+          border:1px solid;
+          cursor: not-allowed;
+}
+.mid .btn a.out{
+            color: #7f8c8d;
+            border: 1px solid grey;
+            font-weight: 500;
+            padding: 0.9rem,1.6rem;
+            border-radius: 3px;
+            justify-content: space-between;
+}
+
+
+.estime{
+        background: #f9f9f9;
+        background-image: url(ror.png);
+        padding: 8rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+}
+.estime .about{
+      width: 39%;
+}
+.estime .people{
+        width: 57%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+}
+.estime .people .basket{
+      width: 45%;
+      height: auto;
+      box-sizing: border-box;
+      background: white;
+      box-shadow: 
+      4.5px 4.5px 3.6px rgba(0, 0, 0, 0.146),
+      12.5px 12.5px 10px rgba(0, 0, 0, 0.21),
+      30.1px 30.1px 24.1px rgba(0, 0, 0, 0.274),
+      100px 100px 80px rgba(0, 0, 0, 0.42);
+}
+.estime .people .basket .img img{
+width: 100%;
+object-fit: cover;
+}
+.estime .people .basket .name, .estime .people .basket .pro{
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 20px 0 20px;
+}
+.estime .people .basket .basketDetails{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-bottom: 10px;
+}
+.estime .people .basket .name h4{
+      color:grey;
+      font-size: 1.5rem;
+}
+.estime .people .basket .pro q{
+  color: gray;
+  font-size: 1.2rem;
+}
+.estime .about h2{
+        color:white;
+        font-size: 2.1rem;
+        padding-bottom: 1.8rem;
+}
+.estime .about p{
+        color:white;
+  font: size 1.1rem;
+}
+.estime .about q{
+        color: white;
+        font: size 1.1rem;
+}
+
+.class{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 7rem 8rem;
+}
+
+  .contact {
+    
+    padding: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url(ror.png);
+  }
+  .contact .mape {
+    width: 45%;
+  }
+  .contact .mape iframe{
+    width: 100%;
+  }
+  .contact .mape h2{
+    font-size: 2rem;
+    color: white;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+  .contact .mape p{
+    font-size: 1.1rem;
+    color: white;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  .contact .mape p i{
+    color: goldenrod;
+  }
+  .contact .form{
+        width: 45%;
+  }
+  .contact .form h2 {
+    font-size: 2rem;
+    color: white;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+  .contact .form .submit{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start ;
+    
+  }
+  .contact .form .submit input, .contact .form .submit textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #95a5a6;
+    outline: none;
+    margin: 13px 0;
+  }
+  .contact .form .submit input:focus, .contact .form .submit textarea:focus{
+  border: 1px solid #111;
+  }
+  .contact .form .submit input::placeholder{
+    color: #7f8c8d;
+    font-size: 1.1rem;
+  }
+  .contact .form .submit textarea::placeholder{
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    height: 80%;
+  }
+  .contact .form .submit a{
+    width: 100%;
+    padding: 15px;
+    text-decoration: none;
+    background: #111;
+    color: white;
+    text-align:center;
+    font-size: 1.1rem;
+    margin: 13px 0;
+  }
+  .work{
+    background-image: url(or.png);
+    padding: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .work .map{
+    width: 19%;
+      height: auto;
+      box-sizing: border-box;
+      
+  }
+  .carousel{
+    height: 1px;
+    margin-right: 48%;
+    margin-top: 20%;
+    
+  }
+  .container {
+    position: relative;
+    width: 320px;
+    
+    perspective: 1000px;
+  }
+
+  .carousel {    
+    transform-style: preserve-3d; 
+    animation: rotate360 60s infinite forwards linear;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+  .carousel__face { 
+    position:absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
+    display: flex;
+    filter: brightness(240%);
+  }
+
+  span {
+    margin: auto;
+    font-size: 2rem;
+  }
+
+  .carousel__face:nth-child(1) {
+    background-image: url("pic.png");
+    transform: rotateY(  0deg) translateZ(530px); }
+  .carousel__face:nth-child(2) { 
+    background-image: url("pic2.png");
+      transform: rotateY( 40deg) translateZ(530px); }
+  .carousel__face:nth-child(3) {
+    background-image: url("pic3.png");
+    transform: rotateY( 80deg) translateZ(530px); }
+  .carousel__face:nth-child(4) {
+    background-image: url("pic4.png");
+    transform: rotateY(120deg) translateZ(530px); }
+  .carousel__face:nth-child(5) { 
+    background-image: url("pic5.png");
+   transform: rotateY(160deg) translateZ(530px); }
+  .carousel__face:nth-child(6) { 
+    background-image: url("pic6.png");
+   transform: rotateY(200deg) translateZ(530px); }
+  .carousel__face:nth-child(7) { 
+    background-image: url("pic7.png");
+   transform: rotateY(240deg) translateZ(530px); }
+  .carousel__face:nth-child(8) {
+    background-image: url("pic8.png");
+    transform: rotateY(280deg) translateZ(530px); }
+  .carousel__face:nth-child(9) {
+    background-image: url("pic9.png");
+    transform: rotateY(320deg) translateZ(530px); }
+  
+  
+  
+  @keyframes rotate360 {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(-360deg);
+    }
+  }
+
+   
+  
+  .work .map .img img{
+  margin-left: 50px;
+  margin-bottom: 50px;
+  }
+  .work .map h2{
+    font-size: 2rem;
+    color:white;
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  
+
+  .footer{
+    border-top: 1px solid black;
+    padding: 5rem 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    background-image: url(or.png);
+    flex-direction:row-reverse;
+    
+  }
+
+  
+  
+
+
+ 
